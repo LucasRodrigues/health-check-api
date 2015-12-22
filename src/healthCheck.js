@@ -28,9 +28,3 @@ export default class HealthCheck {
     });
   }
 }
-
-HealthCheck.do({
-  url: 'htp://globo.com',
-  method: 'GET',
-  expectedStatusCode: 300
-}).then(r => console.log(r)).catch(r => console.log(r));
